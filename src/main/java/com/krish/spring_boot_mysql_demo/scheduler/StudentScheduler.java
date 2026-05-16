@@ -16,7 +16,7 @@ public class StudentScheduler {
     @Autowired
     private final StudentService studentService;
 
-    @Scheduled(fixedRate = 3 * 60 * 1000)
+   // @Scheduled(fixedRate = 3 * 60 * 1000)
     public void run()
     {
         Student updatedStudent = studentService.updateStudent(1L);

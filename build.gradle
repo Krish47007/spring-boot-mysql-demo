@@ -12,7 +12,9 @@ java {
 		languageVersion = JavaLanguageVersion.of(21)
 	}
 }
-
+bootJar{
+	archiveFileName = "spring-boot-mysql-demo.jar"
+}
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
